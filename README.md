@@ -8,6 +8,8 @@ Make **npm install**
 
 USE namedatabase
 **Creating database and table**
+
+```
 CREATE TABLE persons (
     PersonID int,
     LastName varchar(255),
@@ -15,9 +17,10 @@ CREATE TABLE persons (
     Address varchar(255),
     City varchar(255)
 );
-
+```
  2. Config a data base connect in dbconnection.js
 
+```
 var mysql = require('mysql');
 var connection = mysql.createPool({
     host: 'localhost',
@@ -26,7 +29,7 @@ var connection = mysql.createPool({
   database: 'namedatabase'
 });
 module.exports = connection;
-
+```
  3. Start aplication
 Into folter project make npm run dev
 Test http://localhost:3000/up
