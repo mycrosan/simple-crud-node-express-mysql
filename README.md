@@ -1,7 +1,9 @@
 # README #
 
-Make **npm install**
-
+Install
+```
+$ npm install geoservices
+```
 **For use exemplo:**
 
  1. Create a table in data base for exemplo
