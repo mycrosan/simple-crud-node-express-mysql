@@ -7,6 +7,7 @@ Make **npm install**
  1. Create a table in data base for exemplo
 
 USE namedatabase
+**Creating database and table**
 CREATE TABLE persons (
     PersonID int,
     LastName varchar(255),
