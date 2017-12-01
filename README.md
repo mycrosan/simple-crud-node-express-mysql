@@ -43,6 +43,6 @@ Will show info time the server
  4. Test with your table
 http://localhost:3000/api/v1/crud?t=persons
 
-Where **t** = tabela of the your data base
+Where **t** = **table** of the your data base
 
 Thanks!
