@@ -1,33 +1,42 @@
 # README #
 
-npm install -g express-generator-api
+Make npm install
 
-https://www.npmjs.com/package/express-generator-api
+For use exemplo:
 
-This README would normally document whatever steps are necessary to get your application up and running.
+1 - Create a table in data base for exemplo
+USE namedatabase
+CREATE TABLE persons (
+    PersonID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+    City varchar(255) 
+);
 
-### What is this repository for? ###
+2 - Config a data base connect in dbconnection.js
+var mysql = require('mysql');
+var connection = mysql.createPool({
+    host: 'localhost',
+    user: 'root',
+    password: 'password',
+  database: 'namedatabase'
+});
+module.exports = connection;
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+3 - Start aplication
+Into folter project make npm run dev
+Test http://localhost:3000/up
 
-### How do I get set up? ###
+Will show info time the server
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+4 - Test with your table
 
-### Contribution guidelines ###
+http://localhost:3000/api/v1/crud?t=persons
 
-* Writing tests
-* Code review
-* Other guidelines
+Where t = tabela of the your data base
 
-### Who do I talk to? ###
+Thanks
 
-* Repo owner or admin
-* Other community or team contact
+
+
