@@ -5,24 +5,26 @@ Make **npm install**
 **For use exemplo:**
 
  1. Create a table in data base for exemplo
-    USE namedatabase
-    CREATE TABLE persons (
-        PersonID int,
-        LastName varchar(255),
-        FirstName varchar(255),
-        Address varchar(255),
-        City varchar(255)
-    );
+
+USE namedatabase
+CREATE TABLE persons (
+    PersonID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+    City varchar(255)
+);
 
  2. Config a data base connect in dbconnection.js
-    var mysql = require('mysql');
-    var connection = mysql.createPool({
-        host: 'localhost',
-        user: 'root',
-        password: 'password',
-      database: 'namedatabase'
-    });
-    module.exports = connection;
+
+var mysql = require('mysql');
+var connection = mysql.createPool({
+    host: 'localhost',
+    user: 'root',
+    password: 'password',
+  database: 'namedatabase'
+});
+module.exports = connection;
 
  3. Start aplication
 Into folter project make npm run dev
