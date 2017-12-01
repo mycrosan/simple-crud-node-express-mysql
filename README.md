@@ -8,10 +8,9 @@ $ npm install
 
  1. Create a table in data base for exemplo
 
-USE namedatabase
-**Creating database and table**
-
+ **Creating database and table**
 ```
+USE namedatabase
 CREATE TABLE persons (
     PersonID int,
     LastName varchar(255),
