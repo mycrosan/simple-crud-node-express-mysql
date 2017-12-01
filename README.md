@@ -36,7 +36,7 @@ var connection = mysql.createPool({
 module.exports = connection;
 ```
  3. Start aplication
-Into folter project make npm run dev
+Into folter project make **npm run dev**
 Test http://localhost:3000/up
 Will show info time the server
 
