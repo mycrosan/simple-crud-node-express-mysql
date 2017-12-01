@@ -1,42 +1,37 @@
 # README #
 
-Make npm install
+Make **npm install**
 
-For use exemplo:
+**For use exemplo:**
 
-1 - Create a table in data base for exemplo
-USE namedatabase
-CREATE TABLE persons (
-    PersonID int,
-    LastName varchar(255),
-    FirstName varchar(255),
-    Address varchar(255),
-    City varchar(255) 
-);
+ 1. Create a table in data base for exemplo
+    USE namedatabase
+    CREATE TABLE persons (
+        PersonID int,
+        LastName varchar(255),
+        FirstName varchar(255),
+        Address varchar(255),
+        City varchar(255)
+    );
 
-2 - Config a data base connect in dbconnection.js
-var mysql = require('mysql');
-var connection = mysql.createPool({
-    host: 'localhost',
-    user: 'root',
-    password: 'password',
-  database: 'namedatabase'
-});
-module.exports = connection;
+ 2. Config a data base connect in dbconnection.js
+    var mysql = require('mysql');
+    var connection = mysql.createPool({
+        host: 'localhost',
+        user: 'root',
+        password: 'password',
+      database: 'namedatabase'
+    });
+    module.exports = connection;
 
-3 - Start aplication
+ 3. Start aplication
 Into folter project make npm run dev
 Test http://localhost:3000/up
-
 Will show info time the server
 
-4 - Test with your table
-
+ 4. Test with your table
 http://localhost:3000/api/v1/crud?t=persons
 
-Where t = tabela of the your data base
+Where **t** = tabela of the your data base
 
-Thanks
-
-
-
+Thanks!
