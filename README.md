@@ -2,7 +2,7 @@
 
 Install
 ```
-$ npm install geoservices
+$ npm install
 ```
 **For use exemplo:**
 
