@@ -5,9 +5,10 @@ Make **npm install**
 **For use exemplo:**
 
  1. Create a table in data base for exemplo
+ 
+**Creating database and table**
 
 USE namedatabase
-**Creating database and table**
 CREATE TABLE persons (
     PersonID int,
     LastName varchar(255),
