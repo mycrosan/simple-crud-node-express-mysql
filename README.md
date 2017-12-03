@@ -2,7 +2,7 @@
 
 *Description*
 
-Save the REST data in the table without implementing anything to do a CRUD with the REST Verbs Post, Put, Update and Delete
+Save the RESTFULL data in the table without implementing anything to do a CRUD with the REST Verbs Post, Put, Update and Delete
 
 Install
 ```
